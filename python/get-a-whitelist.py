@@ -6,8 +6,8 @@ headers = {
     "kbn-xsrf": "true",
     "Content-Type": "application/json"
 }
-user = "AddSprykerUserToWhitelist"
-password = "a*4tB8PVrHaTV6heJ9v7HGh%6wzc#b*m"
+user = "username"
+password = "password"
 
 try:
     response = requests.get(url, headers=headers, auth=(user, password), verify=False)
