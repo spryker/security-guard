@@ -66,7 +66,7 @@ curl -X POST -k "https://10.111.11.10/api/exception_lists/items" \
 -u <user_name>:<password> \
 -H 'kbn-xsrf: true' \
 -H "Content-Type: application/json" \
--d "$json_data" >> curl-results.json && less /home/itsec/sp/diesec/curl-results.json | jq
+-d "$json_data" | jq >> curl-results.json && less /home/itsec/sp/diesec/curl-results.json
   else
     echo "Invalid line: $line"
   fi
