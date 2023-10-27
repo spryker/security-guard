@@ -4,4 +4,4 @@ curl -X GET -k "https://10.111.11.10/api/exception_lists/items/_find?list_id=642
 -u <user_name>:<password> \
 -H 'kbn-xsrf: true' \
 -H "Content-Type: application/json" \
-> report.json && less report.json | jq | grep 'spryker.com'
+| jq > report.json
